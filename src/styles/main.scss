@@ -1,0 +1,35 @@
+// Init
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+// Variables
+$background: #effafa;
+$primary: #5ca5a5;
+$textDark: #2b3939;
+$textGray: #7c8f8f;
+$shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+$font: "League Spartan", sans-serif;
+
+//--- Main Styles
+
+body {
+  font-family: $font;
+  background: $background;
+}
