@@ -26,10 +26,33 @@ $textDark: #2b3939;
 $textGray: #7c8f8f;
 $shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
 $font: "League Spartan", sans-serif;
+$inspect: red solid 1px;
 
 //--- Main Styles
 
 body {
   font-family: $font;
   background: $background;
+}
+
+header {
+  width: 100%;
+  height: 156px;
+  background: $primary;
+  background-image: url("../assets/bg-header-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  // border: $inspect;
+  display: flex;
+  justify-content: center;
+}
+
+.jobs-container {
+  border: $inspect;
+  margin-top: 76px;
+  width: 1110px;
 }

@@ -1,7 +1,12 @@
+import JobsOverview from "./components/JobsOverview";
+
 function App() {
   return (
     <>
-      <h2>hello world</h2>
+      <header>{/* CSS dynamic */}</header>
+      <main>
+        <JobsOverview />
+      </main>
     </>
   );
 }
