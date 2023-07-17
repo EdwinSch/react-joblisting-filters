@@ -87,11 +87,19 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      h2 {
-        font-size: 1.125rem;
-        color: $primary;
-        font-weight: 700;
+
+      .sub-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        h2 {
+          font-size: 1.125rem;
+          color: $primary;
+          font-weight: 700;
+        }
       }
+
       h3 {
         font-size: 1.375rem;
         color: $textDark;

@@ -19,8 +19,10 @@ const Job = ({
       <div className="general-info-wrapper">
         <img src={logo} alt={company} className="img" />
         <div className="col">
-          <h2>{company}</h2>
-          <Flags newEntry={newEntry} feature={featured} />
+          <div className="sub-header">
+            <h2>{company}</h2>
+            <Flags newEntry={newEntry} feature={featured} />
+          </div>
           <h3>{position}</h3>
           <div className="time-location-wrapper">
             <p>{postedAt}</p>
