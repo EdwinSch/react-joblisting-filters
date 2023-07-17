@@ -14,7 +14,6 @@ ul {
   padding: 0;
 }
 .img {
-  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -54,7 +53,62 @@ main {
 //--- Jobs Styles
 
 .jobs-container {
-  border: $inspect;
+  // border: $inspect;
   margin-top: 76px;
   width: 1110px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.job-wrapper {
+  padding: 32px 40px;
+  width: 100%;
+  height: 152px;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: $shadow;
+
+  .general-info-wrapper {
+    display: flex;
+
+    .col {
+      margin-left: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h2 {
+        font-size: 1.125rem;
+        color: $primary;
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 1.375rem;
+        color: $textDark;
+        font-weight: 700;
+      }
+
+      .time-location-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        p {
+          font-size: 1.125rem;
+          color: $textGray;
+          font-weight: 500;
+        }
+        .dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: #b7c4c4;
+        }
+      }
+    }
+  }
 }
