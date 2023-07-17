@@ -6,6 +6,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+// Variables
+$background: #effafa;
+$primary: #5ca5a5;
+$textDark: #2b3939;
+$textGray: #7c8f8f;
+$shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+$font: "League Spartan", sans-serif;
+$inspect: red solid 1px;
+
+// Utilities
 a {
   text-decoration: none;
 }
@@ -17,15 +28,9 @@ ul {
   display: block;
   object-fit: cover;
 }
-
-// Variables
-$background: #effafa;
-$primary: #5ca5a5;
-$textDark: #2b3939;
-$textGray: #7c8f8f;
-$shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
-$font: "League Spartan", sans-serif;
-$inspect: red solid 1px;
+.border-left {
+  border-left: 5px solid $primary;
+}
 
 //--- Main Styles
 
@@ -54,9 +59,9 @@ main {
 
 .jobs-container {
   // border: $inspect;
+  margin: 0 1.5rem;
   margin-top: 76px;
   width: 1110px;
-
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -72,6 +77,7 @@ main {
   justify-content: space-between;
   align-items: center;
   box-shadow: $shadow;
+  transition: 250ms ease;
 
   .general-info-wrapper {
     display: flex;
@@ -111,4 +117,26 @@ main {
       }
     }
   }
+}
+
+.job-wrapper:hover {
+  transform: scale(1.02);
+}
+
+//--- Flags Styles
+.flag {
+  width: fit-content;
+  padding: 7px;
+  text-transform: uppercase;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.new-flag {
+  background: $primary;
+}
+
+.feature-flag {
+  background: #2b3939;
 }

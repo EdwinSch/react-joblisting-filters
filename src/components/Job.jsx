@@ -1,6 +1,10 @@
+import Flags from "./Flags";
+
 const Job = ({
   company,
   logo,
+  newEntry,
+  featured,
   position,
   role,
   level,
@@ -11,11 +15,12 @@ const Job = ({
   tools,
 }) => {
   return (
-    <article className="job-wrapper">
+    <article className={featured ? "job-wrapper border-left" : "job-wrapper"}>
       <div className="general-info-wrapper">
         <img src={logo} alt={company} className="img" />
         <div className="col">
           <h2>{company}</h2>
+          <Flags newEntry={newEntry} feature={featured} />
           <h3>{position}</h3>
           <div className="time-location-wrapper">
             <p>{postedAt}</p>
