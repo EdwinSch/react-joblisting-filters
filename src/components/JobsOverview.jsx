@@ -1,7 +1,11 @@
-const JobsOverview = () => {
+import Job from "./Job";
+
+const JobsOverview = ({ jobs }) => {
   return (
     <section className="jobs-container">
-      <h3>hellooo</h3>
+      {jobs.map((job) => {
+        return <Job key={job.id} {...job} />;
+      })}
     </section>
   );
 };
