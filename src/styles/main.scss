@@ -60,8 +60,7 @@ main {
 .jobs-container {
   // border: $inspect;
   position: relative;
-  margin: 0 1.5rem;
-  margin-top: 76px;
+  margin: 76px 1.5rem;
   width: 1110px;
   display: flex;
   flex-direction: column;
@@ -142,6 +141,14 @@ main {
   transform: scale(1.02);
 }
 
+@media screen and (max-width: 1000px) {
+  .job-wrapper {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 //--- Flags Styles
 
 .flag {
@@ -185,5 +192,13 @@ main {
   .filter-btn:hover {
     color: white;
     background: $primary;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .labels-wrapper {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #b7c4c4;
   }
 }
