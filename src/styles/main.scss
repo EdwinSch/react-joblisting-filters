@@ -59,12 +59,23 @@ main {
 
 .jobs-container {
   // border: $inspect;
+  position: relative;
   margin: 0 1.5rem;
   margin-top: 76px;
   width: 1110px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.selected-labels-container {
+  position: absolute;
+  top: -110px;
+  height: 72px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: $shadow;
 }
 
 .job-wrapper {
@@ -132,6 +143,7 @@ main {
 }
 
 //--- Flags Styles
+
 .flag {
   width: fit-content;
   padding: 7px;
@@ -147,4 +159,31 @@ main {
 
 .feature-flag {
   background: #2b3939;
+}
+
+//--- Lables Styles
+
+.labels-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .filter-btn {
+    display: block;
+    padding: 0px 9px;
+    height: 32px;
+    font-family: $font;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $primary;
+    border-radius: 4px;
+    border: none;
+    background: $background;
+    cursor: pointer;
+    transition: 300ms ease;
+  }
+  .filter-btn:hover {
+    color: white;
+    background: $primary;
+  }
 }

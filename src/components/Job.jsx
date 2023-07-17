@@ -1,4 +1,5 @@
 import Flags from "./Flags";
+import Labels from "./Labels";
 
 const Job = ({
   company,
@@ -16,6 +17,7 @@ const Job = ({
 }) => {
   return (
     <article className={featured ? "job-wrapper border-left" : "job-wrapper"}>
+      {/* General Information */}
       <div className="general-info-wrapper">
         <img src={logo} alt={company} className="img" />
         <div className="col">
@@ -33,8 +35,8 @@ const Job = ({
           </div>
         </div>
       </div>
-      {/* SB */}
-      <div className="labels-wrapper">labels</div>
+      {/* Labels */}
+      <Labels role={role} level={level} languages={languages} tools={tools} />
     </article>
   );
 };
