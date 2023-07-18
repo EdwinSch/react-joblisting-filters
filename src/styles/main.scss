@@ -49,6 +49,12 @@ header {
   background-position: center;
 }
 
+@media screen and (max-width: 1000px) {
+  header {
+    background-image: url("../assets/bg-header-mobile.svg");
+  }
+}
+
 main {
   // border: $inspect;
   display: flex;
@@ -91,6 +97,7 @@ main {
 
   .general-info-wrapper {
     display: flex;
+    position: relative;
 
     .col {
       margin-left: 24px;
@@ -142,10 +149,48 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
+  .jobs-container {
+    gap: 40px;
+  }
+
   .job-wrapper {
+    padding: 32px 24px;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
+
+    .general-info-wrapper {
+      // border: $inspect;
+      min-height: 85px;
+
+      .col {
+        margin-left: 0px;
+
+        .sub-header {
+          h2 {
+            font-size: 0.813rem;
+          }
+        }
+
+        h3 {
+          font-size: 0.938rem;
+        }
+
+        .time-location-wrapper {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .img {
+      position: absolute;
+      top: -55px;
+      left: 0;
+      width: 48px;
+      height: 48px;
+    }
   }
 }
 
@@ -154,6 +199,7 @@ main {
 .flag {
   width: fit-content;
   padding: 7px;
+  height: 24px;
   text-transform: uppercase;
   border-radius: 12px;
   color: white;
