@@ -13,7 +13,6 @@ const Job = ({
   contract,
   location,
   languages,
-  tools,
 }) => {
   return (
     <article className={featured ? "job-wrapper border-left" : "job-wrapper"}>
@@ -36,7 +35,7 @@ const Job = ({
         </div>
       </div>
       {/* Labels */}
-      <Labels role={role} level={level} languages={languages} tools={tools} />
+      <Labels role={role} level={level} languages={languages} />
     </article>
   );
 };

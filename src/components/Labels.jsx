@@ -1,4 +1,4 @@
-const Labels = ({ role, level, languages, tools }) => {
+const Labels = ({ role, level, languages }) => {
   return (
     <div className="labels-wrapper">
       <button type="button" className="filter-btn">
