@@ -1,18 +1,14 @@
 const Labels = ({ role, level, languages }) => {
   return (
     <div className="labels-wrapper">
-      <button type="button" className="filter-btn">
-        {role}
-      </button>
-      <button type="button" className="filter-btn">
-        {level}
-      </button>
+      <div className="flag-static">{role}</div>
+      <div className="flag-static">{level}</div>
 
       {languages.map((lang, index) => {
         return (
-          <button key={index} type="button" className="filter-btn">
+          <div key={index} className="flag-static">
             {lang}
-          </button>
+          </div>
         );
       })}
     </div>
