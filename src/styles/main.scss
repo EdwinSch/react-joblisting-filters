@@ -245,14 +245,10 @@ main {
   color: white;
   background: $primary;
 }
-.clear {
-  margin-left: 20px;
-  background: none;
-}
-.clear:hover {
-  color: $primary;
-  background: none;
-  text-decoration: underline;
+
+.btn:focus {
+  background: $textDark;
+  color: white;
 }
 
 .btn:last-child {
@@ -264,6 +260,16 @@ main {
   color: $primary;
   background: none;
   text-decoration: underline;
+}
+
+.btn:last-child:hover {
+  color: $primary;
+  background: none;
+  text-decoration: underline;
+}
+.btn:last-child:focus {
+  color: $primary;
+  background: none;
 }
 
 .flag-static {

@@ -14,15 +14,17 @@ function App() {
   const [jobs, setJobs] = useState(data);
   const [buttons, setButtons] = useState(newBtnsCollection);
 
-  // Filter Function
+  // Filter Buttons Function
   const filterJobs = (cat) => {
+    // Clear Filter Btn
     if (cat === "clear filter") {
       setJobs(data);
       return;
     }
 
+    // Filter by category
     const newJobs = data.filter((job) => job.role === cat || job.level === cat);
-    console.log(cat);
+    // console.log(cat);
     setJobs(newJobs);
   };
 
