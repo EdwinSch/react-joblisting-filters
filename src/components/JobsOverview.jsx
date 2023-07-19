@@ -1,4 +1,4 @@
-import FilterBtns from "./filterBtns";
+import FilterBtns from "./FilterBtns";
 import Job from "./Job";
 
 const JobsOverview = ({ jobs, setJobs, buttons, filterJobs, data }) => {
