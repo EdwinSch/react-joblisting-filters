@@ -1,9 +1,6 @@
-const Labels = ({ role, level, languages }) => {
+const StackLabels = ({ languages }) => {
   return (
     <div className="labels-wrapper">
-      <div className="flag-static">{role}</div>
-      <div className="flag-static">{level}</div>
-
       {languages.map((lang, index) => {
         return (
           <div key={index} className="flag-static">
@@ -15,4 +12,4 @@ const Labels = ({ role, level, languages }) => {
   );
 };
 
-export default Labels;
+export default StackLabels;

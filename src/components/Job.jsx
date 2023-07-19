@@ -1,5 +1,5 @@
 import Flags from "./Flags";
-import Labels from "./Labels";
+import StackLabels from "./StackLabels";
 
 const Job = ({
   company,
@@ -35,7 +35,7 @@ const Job = ({
         </div>
       </div>
       {/* Labels */}
-      <Labels role={role} level={level} languages={languages} />
+      <StackLabels languages={languages} />
     </article>
   );
 };
