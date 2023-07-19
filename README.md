@@ -14,6 +14,6 @@ A small React project with a sign-up form for a (mock) newsletter. The form vali
 
 #### 💻 Run this project
 
-`git clone repo
-npm install
-npm run dev`
+`git clone [repo]`
+`npm install`
+`npm run dev`
