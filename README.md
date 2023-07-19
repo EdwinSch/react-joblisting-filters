@@ -4,7 +4,7 @@ A SPA with (mock) joblistings. The user can filter by different listing categori
 
 ### Live Demo
 
-🚀 [Deployed App](https://app.netlify.com/sites/lovely-pika-96e876/overview)
+🚀 [Deployed App](https://main--extraordinary-taiyaki-c211ed.netlify.app/)
 
 #### 🛠️ Build with
 
