@@ -1,6 +1,7 @@
 const FilterBtns = ({ buttons, filterJobs }) => {
   return (
     <div className="btns-row">
+      <h3>Filters:</h3>
       {buttons.map((button) => {
         return (
           <button
