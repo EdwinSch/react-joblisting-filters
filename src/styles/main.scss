@@ -56,7 +56,6 @@ header {
 }
 
 main {
-  // border: $inspect;
   display: flex;
   justify-content: center;
 }
@@ -64,7 +63,6 @@ main {
 //--- Jobs Styles
 
 .jobs-container {
-  // border: $inspect;
   position: relative;
   margin: 76px 1.5rem;
   width: 1110px;
@@ -73,7 +71,7 @@ main {
   gap: 24px;
 }
 
-.selected-labels-container {
+.filter-btns-container {
   padding: 20px 40px;
   position: absolute;
   top: -110px;
@@ -84,8 +82,14 @@ main {
   box-shadow: $shadow;
 
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.btns-row {
+  display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .job-wrapper {
@@ -219,13 +223,33 @@ main {
   background: #2b3939;
 }
 
-//--- Lables Styles
+//--- Labels Styles
 
 .labels-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
+
+@media screen and (max-width: 1000px) {
+  .labels-wrapper {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #b7c4c4;
+  }
+}
+
+.label-static {
+  padding: 5px 9px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: $primary;
+  border-radius: 4px;
+  border: none;
+  background: $background;
+}
+
+//--- Filter Button Styles
 
 .btn {
   display: block;
@@ -251,41 +275,17 @@ main {
   color: white;
 }
 
-.btn:last-child {
-  margin-left: 20px;
+.clear-btn {
   background: none;
   text-transform: capitalize;
 }
-.btn:last-child:hover {
+.clear-btn:hover {
   color: $primary;
   background: none;
   text-decoration: underline;
 }
 
-.btn:last-child:hover {
+.clear-btn:focus {
   color: $primary;
   background: none;
-  text-decoration: underline;
-}
-.btn:last-child:focus {
-  color: $primary;
-  background: none;
-}
-
-.flag-static {
-  padding: 5px 9px;
-  font-size: 1rem;
-  font-weight: 700;
-  color: $primary;
-  border-radius: 4px;
-  border: none;
-  background: $background;
-}
-
-@media screen and (max-width: 1000px) {
-  .labels-wrapper {
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #b7c4c4;
-  }
 }

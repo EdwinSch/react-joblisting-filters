@@ -8,7 +8,7 @@ const rolesSet = new Set(mapRoles);
 const mapLevels = data.map((item) => item.level);
 const levelsSet = new Set(mapLevels);
 
-const newBtnsCollection = [...rolesSet, ...levelsSet, "clear filter"];
+const newBtnsCollection = [...rolesSet, ...levelsSet];
 
 function App() {
   const [jobs, setJobs] = useState(data);
@@ -16,15 +16,11 @@ function App() {
 
   // Filter Buttons Function
   const filterJobs = (cat) => {
-    // Clear Filter Btn
-    if (cat === "clear filter") {
-      setJobs(data);
-      return;
-    }
-
     // Filter by category
     const newJobs = data.filter((job) => job.role === cat || job.level === cat);
     // console.log(cat);
+
+    // Set new filtered state
     setJobs(newJobs);
   };
 
@@ -32,7 +28,13 @@ function App() {
     <>
       <header>{/* CSS dynamic */}</header>
       <main>
-        <JobsOverview jobs={jobs} buttons={buttons} filterJobs={filterJobs} />
+        <JobsOverview
+          jobs={jobs}
+          setJobs={setJobs}
+          buttons={buttons}
+          filterJobs={filterJobs}
+          data={data}
+        />
       </main>
     </>
   );

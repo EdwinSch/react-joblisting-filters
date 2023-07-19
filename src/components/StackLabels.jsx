@@ -3,7 +3,7 @@ const StackLabels = ({ languages }) => {
     <div className="labels-wrapper">
       {languages.map((lang, index) => {
         return (
-          <div key={index} className="flag-static">
+          <div key={index} className="label-static">
             {lang}
           </div>
         );

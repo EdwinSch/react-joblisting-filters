@@ -1,6 +1,6 @@
 const FilterBtns = ({ buttons, filterJobs }) => {
   return (
-    <>
+    <div className="btns-row">
       {buttons.map((button) => {
         return (
           <button
@@ -13,7 +13,7 @@ const FilterBtns = ({ buttons, filterJobs }) => {
           </button>
         );
       })}
-    </>
+    </div>
   );
 };
 
