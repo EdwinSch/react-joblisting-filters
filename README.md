@@ -1,6 +1,6 @@
 ## Joblisting with Filters (React)
 
-A small React project with a sign-up form for a (mock) newsletter. The form validates and returns feedback to the user. Showcasing: input/forms, form validation, data/state handling and dynmamic styling. Made in Vite + CSS.
+A SPA with (mock) joblistings. The user can filter by different listing categories. Showcasing: JSON data handling, filtering, state handling, CDD and dynmamic styling.
 
 ### Live Demo
 
