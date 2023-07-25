@@ -1,17 +1,14 @@
+import SingleButton from "./SingleButton";
+
 const FilterBtns = ({ buttons, filterJobs }) => {
+  // console.log(buttons);
+
   return (
     <div className="btns-row">
       <h3>Filters:</h3>
-      {buttons.map((button) => {
+      {buttons.map((button, index) => {
         return (
-          <button
-            key={button}
-            type="button"
-            className="btn"
-            onClick={() => filterJobs(button)}
-          >
-            {button}
-          </button>
+          <SingleButton key={index} button={button} filterJobs={filterJobs} />
         );
       })}
     </div>
