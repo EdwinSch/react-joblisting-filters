@@ -280,10 +280,10 @@ main {
   background: $primary;
 }
 
-// .btn:focus {
-//   background: $textDark;
-//   color: white;
-// }
+.btn:focus {
+  background: $textDark;
+  color: white;
+}
 
 .clear-btn {
   padding: 0px 0px;
